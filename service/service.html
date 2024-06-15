@@ -16,7 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="mainpage.css" />
+    <link rel="stylesheet" href="../mainpage/mainpage.css" />
   </head>
 
   <body>
@@ -30,25 +30,14 @@
               <div style="height: 20px"></div>
             </h4>
             <li>
-              <a href="#">
+              <a href="../mainpage/mainpage.html">
                 <span class="material-symbols-outlined"> dashboard </span> Stok
                 Barang</a
               >
             </li>
-            <li>
-              <a href="../supplier/supplier.html"
-                ><span class="material-symbols-outlined"> overview </span
-                >Supplier</a
-              >
             </li>
             <li>
-              <a href="../customer/customer.html"
-                ><span class="material-symbols-outlined"> monitoring </span
-                >Customer</a
-              >
-            </li>
-            <li>
-              <a href="../purchase/supplier.html"
+              <a href="../purchase/purchase.html"
                 ><span class="material-symbols-outlined"> move_up </span
                 >Purchase Item</a
               >
@@ -58,6 +47,9 @@
                 ><span class="material-symbols-outlined"> flag </span>Sold
                 item</a
               >
+            </li>
+            <li>
+              <a href="../service/service.html"><span class="material-symbols-outlined"> flag </span>Service</a>
             </li>
           </ul>
         </aside>
@@ -173,15 +165,37 @@
           </div>
         </div>
       </div>
+
+      <div>
+        <div class="fitur-wrapper">
+          <input id="keyword" type="text" class="form-control fitur" placeholder="Search by Product Name" style="width: 25%" />
+          <label for="dropdown" style="margin-top: 20px;" class="fitur">Sort By</label>
+          <div class="dropdown fitur" id="dropdown">
+            <div class="select">
+              <span class="selected">Price</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li>Product Name</li>
+              <li>Product Code</li>
+              <li class="active">Price</li>
+            </ul>
+            </div>
+          <label for="start_date" style="margin-top: 20px;" class="fitur">Start date</label>
+          <input type="date" id="start_date" class="fitur">
+          <label for="end_date" class="fitur" style="margin-top: 20px;">End date</label>
+          <input type="date"  id="end_date" class="fitur">
+      </div>
+
       <div class="table-list-data">
         <table>
           <tr>
             <th>ID</th>
-            <th>Product Name</th>
-            <th>Product Code</th>
-            <th>Quantity</th>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Service Name</th>
+            <th>Service Code</th>
             <th>Price</th>
-            <th>Image</th>
           </tr>
           <tr>
             <td>1</td>
@@ -203,6 +217,6 @@
       </div>
     </div>
 
-    <script src="mainpage.js"></script>
+    <script src="../mainpage/mainpage.js"></script>
   </body>
 </html>
