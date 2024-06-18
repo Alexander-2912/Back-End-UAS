@@ -55,6 +55,9 @@
             <li>
               <a href="{{ route('service') }}"><span class="material-symbols-outlined"> flag </span>Service</a>
             </li>
+            <li>
+              <a href="{{ route('note') }}"><span class="material-symbols-outlined"> flag </span>Note</a>
+            </li>
           </ul>
         </aside>
       </div>

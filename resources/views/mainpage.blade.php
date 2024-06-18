@@ -30,6 +30,10 @@
             <label for="price">Price</label>
             <input type="text" id="price" placeholder="Quantity" class="input-color"/>
           </div>
+          <div class="form-element">
+            <label for="date">Date</label>
+            <input type="date" id="date" class="input-color" name="date"/>
+          </div>
 
 
           <div class="button-create-submit">
@@ -49,7 +53,7 @@
           <div class="fitur-wrapper">
             <input id="keyword" type="text" class="form-control fitur" placeholder="Search by Product Name" style="width: 25%" />
             <label for="dropdown" style="margin-top: 20px;" class="fitur">Sort By</label>
-            <div class="dropdown fitur" id="dropdown" style="position: static">
+            <div class="dropdown fitur" id="dropdown">
               <div class="select">
                 <span class="selected">Price</span>
                 <div class="caret"></div>
@@ -74,6 +78,7 @@
             <th>Product Code</th>
             <th>Quantity</th>
             <th>Price</th>
+            <th>Date</th>
           </tr>
           <tr>
             <td>1</td>

@@ -55,3 +55,48 @@ dropdowns.forEach(dropdown => {
     })
   })
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('cardForm');
+  
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from submitting and reloading the page
+      createItem(); // Call the function to create the card
+  });
+});
+
+
+function createItem(){
+  
+  let date = document.getElementById("date").value;
+  let description = document.getElementById("description").value;
+  let important = document.getElementById("important").checked;
+
+  let wrapper = document.createElement("div");
+  wrapper.classList.add("card-wrapper")
+
+  if(important == true){
+    wrapper.style.backgroundColor ="#3fc4bd"
+  }
+
+  let cardDate = document.createElement("div")
+  cardDate.classList.add("card-date")
+
+  let spanDate = document.createElement("span")
+  spanDate.classList.add("date-text")
+  spanDate.textContent = date
+
+  let desc = document.createElement("div")
+  desc.classList.add("card-description")
+
+  let spanDesc = document.createElement("span")
+  spanDesc.textContent = description
+
+  wrapper.appendChild(cardDate)
+  wrapper.appendChild(desc)
+  cardDate.append(spanDate)
+  desc.append(spanDesc)
+
+  document.getElementById("table-list-data").appendChild(wrapper)
+}

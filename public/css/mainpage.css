@@ -588,3 +588,29 @@ tr:nth-child(even) {
 .input-color{
   color: black;
 }
+
+.card-wrapper{
+  border: #161a2d;
+  border-style:solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.card-date{
+  font-size: 24px;
+}
+
+.date-text{
+  background-color: #161a2d;
+  padding: 5px 20px;
+  border-style:none;
+  border-radius: 10px;
+  color: white;
+}
+
+.card-description{
+  margin-top: 15px;
+  font-size: 20px;
+}
