@@ -15,24 +15,24 @@
         <div class="form">
           <h2 style="color: white">Create New Product</h2>
           <div class="form-element">
-            <label for="product-name">Product Name</label>
-            <input type="text" id="product-name" placeholder="Product Name" />
+            <label for="service-customer-name">Customer Name</label>
+            <input type="text" id="service-customer-name" placeholder="Customer Name" class="input-color"/>
           </div>
           <div class="form-element">
-            <label for="product-code">Product Code</label>
-            <input type="text" id="product-code" placeholder="Product Name" />
+            <label for="service-number">Phone Number</label>
+            <input type="text" id="service-name" placeholder="Phone Number" class="input-color"/>
           </div>
           <div class="form-element">
-            <label for="quantity">Quantity</label>
-            <input type="text" id="quantity" placeholder="Quantity" />
+            <label for="service-name">Service Name</label>
+            <input type="text" id="service-name" placeholder="Service Name" class="input-color"/>
+          </div>
+          <div class="form-element">
+            <label for="service-code">Service Code</label>
+            <input type="text" id="service-code" placeholder="Service Code" class="input-color"/>
           </div>
           <div class="form-element">
             <label for="price">Price</label>
-            <input type="text" id="price" placeholder="Quantity" />
-          </div>
-          <div class="form-element">
-            <label for="image">Image</label>
-            <input type="file" id="image" />
+            <input type="text" id="price" placeholder="Quantity" class="input-color"/>
           </div>
 
           <div class="button-create-submit">

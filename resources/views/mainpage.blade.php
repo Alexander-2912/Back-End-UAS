@@ -16,24 +16,21 @@
           <h2 style="color: white">Create New Product</h2>
           <div class="form-element">
             <label for="product-name">Product Name</label>
-            <input type="text" id="product-name" placeholder="Product Name" />
+            <input type="text" id="product-name" placeholder="Product Name" class="input-color"/>
           </div>
           <div class="form-element">
             <label for="product-code">Product Code</label>
-            <input type="text" id="product-code" placeholder="Product Name" />
+            <input type="text" id="product-code" placeholder="Product Name" class="input-color"/>
           </div>
           <div class="form-element">
             <label for="quantity">Quantity</label>
-            <input type="text" id="quantity" placeholder="Quantity" />
+            <input type="text" id="quantity" placeholder="Quantity" class="input-color"/>
           </div>
           <div class="form-element">
             <label for="price">Price</label>
-            <input type="text" id="price" placeholder="Quantity" />
+            <input type="text" id="price" placeholder="Quantity" class="input-color"/>
           </div>
-          <div class="form-element">
-            <label for="image">Image</label>
-            <input type="file" id="image" />
-          </div>
+
 
           <div class="button-create-submit">
             <button
@@ -77,7 +74,6 @@
             <th>Product Code</th>
             <th>Quantity</th>
             <th>Price</th>
-            <th>Image</th>
           </tr>
           <tr>
             <td>1</td>
@@ -85,7 +81,6 @@
             <td>XX1</td>
             <td>50</td>
             <td>50.000</td>
-            <td>image</td>
           </tr>
           <tr>
             <td>2</td>
@@ -93,7 +88,6 @@
             <td>XX2</td>
             <td>65</td>
             <td>100.000</td>
-            <td>image</td>
           </tr>
         </table>
       </div>
