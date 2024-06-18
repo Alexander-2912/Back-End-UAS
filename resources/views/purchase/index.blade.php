@@ -14,7 +14,6 @@
       <form method="post" action="{{route('purchase.store')}}" class="form">
         @csrf
         @method('post')
-          <h2 style="color: white;">Add New Product</h2>
           <div class="form-element">
             <label for="purchase-seller-name">Seller Name</label>
             <input type="text" id="purchase-seller-name" placeholder="Seller Name" class="input-color" name="sellerName"/>
@@ -39,6 +38,10 @@
             <label for="purchase-price">Price</label>
             <input type="text" id="purchase-price" placeholder="Price" class="input-color" name="price"/>
           </div>
+          <div class="form-element">
+            <label for="purchase-date">Date</label>
+            <input type="date" id="purchase-date" class="input-color" name="date"/>
+          </div>
 
           <div class="button-create-submit">
               <input type="submit" value="Create" class="btn btn-success button-new-list" id="button-create-submit">
@@ -50,7 +53,7 @@
     <div class="fitur-wrapper">
       <input id="keyword" type="text" class="form-control fitur" placeholder="Search by Product Name" style="width: 25%" />
       <label for="dropdown" style="margin-top: 20px;" class="fitur">Sort By</label>
-      <div class="dropdown fitur" id="dropdown" style="position: static">
+      <div class="dropdown fitur" id="dropdown">
         <div class="select">
           <span class="selected">Price</span>
           <div class="caret"></div>
@@ -61,11 +64,12 @@
           <li class="active-feature">Price</li>
         </ul>
         </div>
-      <label for="start_date" style="margin-top: 20px;" class="fitur">Start date</label>
+        <label for="start_date" style="margin-top: 20px;" class="fitur">Start date</label>
       <input type="date" id="start_date" class="fitur">
-      <label for="end_date" class="fitur" style="margin-top: 20px;">End date</label>
+      <label for="end_date" class="fitur" style="margin-top: 20px; ">End date</label>
       <input type="date"  id="end_date">
   </div>
+
 
   <div class="table-list-data">
     <table>
@@ -77,6 +81,7 @@
         <th>Product Code</th>
         <th>Quantity</th>
         <th>Price</th>
+        <th>Date</th>
       </tr>
       <tr>
         <td>1</td>
