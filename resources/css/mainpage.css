@@ -1,6 +1,7 @@
 /* Importing Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Body Styling */
 body {
   min-height: 100vh;
   background: #F0F4FF;
 }
 
+/* Sidebar Styling */
 .sidebar {
   position: fixed;
   top: 0;
@@ -97,6 +100,7 @@ body {
   transition: 0.2s ease;
 }
 
+/* User Account Styling */
 .user-account {
   margin-top: auto;
   padding: 12px 10px;
@@ -131,7 +135,7 @@ body {
   color: white
 }
 
-
+/* Profile Button Styling */
 .profile-button{
   width: 100%;
   /* min-height: 100vh; */
@@ -149,6 +153,7 @@ body {
   margin-left: 30px;
 }
 
+/* Navbar List Styling */
 .navbar-list-left{
   width: 100%;
   text-align: left;
@@ -172,6 +177,7 @@ body {
   font-weight:500;
 }
 
+/* Sub Menu Styling */
 .sub-menu-wrap{
   position: absolute;
   top: 100%;
@@ -291,7 +297,7 @@ body {
 }
 
 
-
+/* Popup Styling */
 .popup {
   position: fixed;
   top: -150%;

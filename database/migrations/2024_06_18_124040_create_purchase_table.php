@@ -14,13 +14,16 @@ return new class extends Migration
     public function up()
     {
         Schema::create('purchase', function (Blueprint $table) {
-            $table->id();
-            $table->string('sellerName');
-            $table->integer('phoneNumber');
-            $table->string('productName');
-            $table->string('productCode');
-            $table->integer('quantity');
-            $table->integer('price');
+            $table->id(); // Kolom ID otomatis untuk identifikasi unik
+            $table->string('sellerName'); // Nama penjual
+            $table->integer('phoneNumber'); // Nomor telepon penjual
+            $table->string('productName'); // Nama produk yang dibeli
+            $table->string('productCode'); // Kode produk
+            $table->integer('quantity'); // Jumlah barang yang dibeli
+            $table->integer('price'); // Harga per unit produk
+            $table->date('date'); // Tanggal transaksi
+            $table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();
+ // Foreign key untuk menautkan ke pengguna yang melakukan pembelian, dengan cascade on delete dan update
             $table->timestamps();
         });
     }

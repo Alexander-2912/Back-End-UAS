@@ -14,14 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('personal_access_tokens', function (Blueprint $table) {
-            $table->id();
-            $table->morphs('tokenable');
-            $table->string('name');
-            $table->string('token', 64)->unique();
-            $table->text('abilities')->nullable();
-            $table->timestamp('last_used_at')->nullable();
-            $table->timestamp('expires_at')->nullable();
-            $table->timestamps();
+            $table->id(); // Kolom ID otomatis untuk identifikasi unik
+            $table->morphs('tokenable'); // Polimorfik relasi untuk menunjuk ke model pengguna atau entitas lainnya
+            $table->string('name'); // Nama token
+            $table->string('token', 64)->unique(); // Nilai token unik
+            $table->text('abilities')->nullable(); // Kemampuan (permissions) yang dimiliki oleh token
+            $table->timestamp('last_used_at')->nullable(); // Timestamp terakhir kali token digunakan
+            $table->timestamp('expires_at')->nullable(); // Timestamp kapan token akan kedaluwarsa
+            $table->timestamps();// Timestamp kapan token dibuat dan diperbarui
         });
     }
 

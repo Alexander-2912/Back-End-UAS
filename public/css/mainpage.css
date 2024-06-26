@@ -1,6 +1,7 @@
 /* Importing Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Reset global dan pengaturan font */
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Gaya untuk body */
 body {
   min-height: 100vh;
   background: #F0F4FF;
 }
 
+/* Gaya untuk sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -97,6 +100,7 @@ body {
   transition: 0.2s ease;
 }
 
+/* Gaya untuk akun pengguna */
 .user-account {
   margin-top: auto;
   padding: 12px 10px;
@@ -131,7 +135,7 @@ body {
   color: white
 }
 
-
+/* Gaya untuk tombol profil */
 .profile-button{
   width: 100%;
   /* min-height: 100vh; */
@@ -149,6 +153,7 @@ body {
   margin-left: 30px;
 }
 
+/* Gaya untuk navigasi bar */
 .navbar-list-left{
   width: 100%;
   text-align: left;
@@ -172,6 +177,7 @@ body {
   font-weight:500;
 }
 
+/* Gaya untuk submenu */
 .sub-menu-wrap{
   position: absolute;
   top: 100%;
@@ -466,13 +472,14 @@ body {
   }
 }
 
+/* Gaya untuk header wrapper */
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
+/* Gaya untuk tabel */
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -493,6 +500,7 @@ tr:nth-child(even) {
   margin: 2%
 }
 
+/* Gaya untuk wrapper fitur */
 .fitur-wrapper{
   margin:2%;
   display:flex;
@@ -503,6 +511,7 @@ tr:nth-child(even) {
   margin-right: 7px;
 }
 
+/* Gaya untuk dropdown */
 .dropdown{
   min-width: 10em;
 }
@@ -546,6 +555,7 @@ tr:nth-child(even) {
   transform: rotate(180deg);
 }
 
+/* Gaya untuk menu dropdown */
 .menu{
   list-style: none;
   padding: 0.2em 0.5em;
@@ -585,10 +595,12 @@ tr:nth-child(even) {
   opacity: 1
 }
 
+/* Gaya untuk input warna */
 .input-color{
   color: black;
 }
 
+/* Gaya untuk wrapper card */
 .card-wrapper{
   border: #161a2d;
   border-style:solid;

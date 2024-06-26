@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Reset global dan pengaturan font */
 *{
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
+/* style untuk bagian utama */
 section{
     display: flex;
     justify-content: center;
@@ -15,6 +19,8 @@ section{
     background-position: center;
     background-size: cover;
 }
+
+/* style untuk kotak formulir */
 .form-box{
     position: relative;
     width: 400px;
@@ -28,11 +34,15 @@ section{
     align-items: center;
 
 }
+
+/* style untuk judul */
 h2{
     font-size: 2em;
     color: #fff;
     text-align: center;
 }
+
+/* style untuk kotak input */
 .inputbox{
     position: relative;
     margin: 30px 0;
@@ -49,10 +59,14 @@ h2{
     pointer-events: none;
     transition: .5s;
 }
+
+/* Animasi label saat fokus */
 input:focus ~ label,
 input:valid ~ label{
 top: -5px;
 }
+
+/* style untuk input */
 .inputbox input {
     width: 100%;
     height: 50px;
@@ -70,6 +84,8 @@ top: -5px;
     font-size: 1.2em;
     top: 20px;
 }
+
+/* style untuk bagian lupa kata sandi */
 .forget{
     margin: -15px 0 15px ;
     font-size: .9em;
@@ -90,6 +106,7 @@ top: -5px;
     text-decoration: underline;
 }
 
+/* style untuk tombol */
 .btn{
     color: black;
     font-weight: bold;
@@ -103,6 +120,8 @@ top: -5px;
     cursor: pointer;
     box-shadow: 3px 0 10px rgba(0,0,0,.5);
 }
+
+/* style untuk bagian registrasi */
 .register{
     font-size: .9em;
     color: #fff;

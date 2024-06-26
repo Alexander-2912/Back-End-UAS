@@ -1,21 +1,27 @@
+// Mendapatkan elemen submenu berdasarkan ID "submenu"
 let submenu = document.getElementById("submenu");
 
+// Fungsi untuk mengalihkan status tampilan submenu
 function toggleMenu(){
     submenu.classList.toggle("open-menu")
 }
 
+// Menambahkan event listener untuk tombol dengan ID "button-create"
 document.querySelector("#button-create").addEventListener("click", function(){
     document.querySelector(".popup").classList.add("active");
 })
 
+// Menambahkan event listener pada tombol close dalam popup
 document.querySelector(".popup .close-btn").addEventListener("click", function(){
     document.querySelector(".popup").classList.remove("active");
 })
 
+// Menambahkan event listener untuk tombol submit dalam popup
 document.querySelector("#button-create-submit").addEventListener("click", function(){
     document.querySelector(".popup").classList.remove("active");
 })
 
+// Mendapatkan tombol dengan ID "button-create"
 const button = document.getElementById("button-create");
       button.addEventListener("click", (e) => {
         e.preventDefault;
@@ -25,7 +31,7 @@ const button = document.getElementById("button-create");
         }, 600);
       });
 
-
+// Mendapatkan semua elemen dengan kelas "dropdown"
 const dropdowns = document.querySelectorAll('.dropdown')
 
 dropdowns.forEach(dropdown => {
@@ -35,6 +41,7 @@ dropdowns.forEach(dropdown => {
   const options = dropdown.querySelectorAll('.menu li')
   const selected = dropdown.querySelector('.selected')
 
+  // Menambahkan event listener untuk saat klik pada ".select"
   select.addEventListener('click', () => {
     select.classList.toggle('select-clicked')
     caret.classList.toggle('caret-rotate')
@@ -42,6 +49,7 @@ dropdowns.forEach(dropdown => {
 
   })
 
+  // Menambahkan event listener untuk setiap opsi dalam dropdown
   options.forEach(option => {
     option.addEventListener('click', () => {
       selected.innerText = option.innerText;
