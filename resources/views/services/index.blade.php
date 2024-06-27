@@ -169,7 +169,7 @@
                     let index = {
                         'service name': 3,
                         'service code': 4,
-                        'price': 6
+                        'price': 5
                     } [criteria];
 
                     let rows = Array.from(document.querySelectorAll('tbody tr'));
