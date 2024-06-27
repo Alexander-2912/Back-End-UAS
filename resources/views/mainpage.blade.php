@@ -229,17 +229,19 @@
                 
 
                 function filterByDate() {
-                    let startDate = new Date(document.getElementById('start_date').value);
-                    let endDate = new Date(document.getElementById('end_date').value);
+                    let startDate = document.getElementById("start_date").value;
+                    let endDate = document.getElementById("end_date").value;
+                    let rows = document.querySelectorAll(".table-list-data tbody tr");
 
-                    let rows = document.querySelectorAll('tbody tr');
                     rows.forEach(row => {
-                        let rowDate = new Date(row.cells[6].innerText);
-                        if ((isNaN(startDate) || rowDate >= startDate) && (isNaN(endDate) || rowDate <=
-                                endDate)) {
-                            row.style.display = '';
+                        let dateValue = row.querySelector("td:nth-child(6)").textContent.trim();
+                        let date = new Date(dateValue);
+
+                        if ((startDate === "" || date >= new Date(startDate)) && (endDate === "" || date <= new Date(
+                            endDate))) {
+                            row.style.display = "";
                         } else {
-                            row.style.display = 'none';
+                            row.style.display = "none";
                         }
                     });
                 }
